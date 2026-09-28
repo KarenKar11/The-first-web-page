@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --family: monospace;
+}
+
+/* HEADER_NAV_BAR */
+
+header {
+    width:100%;
+    height: 70px;
+    background-color: black;
+    position:fixed;
+    z-index: 3;
+}    
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-bar li {
+    width: 24%;
+    list-style-type:none;
+    text-align:center;
+    padding: 12px;
+    color: white;
+    font-family: var(--family);
+    font-size: 17px;
+    transition: .2s;
+}
+
+.nav-bar li:hover {
+    background-color: white;
+    color: black;
+    transition: .2s;
+}
+
+
+/* SECTION_ONE */
+
+/* BACKGROUND_IMG_AND_TEXTS */
+
+
+.first-section {
+    width:100%;
+}
+
+
+.bg-img {
+    background-image: url("https://www.w3schools.com/w3images/coffeehouse.jpg");
+    background-repeat: no-repeat;
+    filter: grayscale(50%);
+    background-size: cover;
+    height: 550px;
+    background-position: center;
+}
+
+.bg-center-text {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    width: 20%;/* UXXEL*/
+}
+
+.bg-center-text h2 {
+    text-align: center;
+    font-size: 85px;
+    color: white;
+    font-family: var(--family);
+}
+.bg-center-text h1 {
+    text-align: center;
+    font-size: 85px;
+    color: white;
+    font-family: var(--family);
+}
+
+
+
+.bg-img-text-left {
+    background-color: black;
+    padding: 7px;
+    margin: 7px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    color:white;
+    font-family: var(--family);
+}
+
+.bg-img-text-right {
+    padding: 7px;
+    margin: 7px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    color:white;
+    font-family: var(--family);
+}
+
+/* SECTION_TWO */
+
+.section-two {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-center-text {
+    width: 70%;
+    height: auto;
+}
+
+
+/* CENTER_TEXT */
+.center-text {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding: 20px 0;
+}
+
+.center-text p {
+    width: 20%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: var(--family);
+    font-size: 18px;
+    
+}
+
+/* ABOUT_TEXT */
+
+.about-text {
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-text p {
+    width: 75%;
+    padding: 10px 0;
+    font-family: var(--family);
+    font-size: 17px;
+    text-align: justify;
+}
+
+.text-left-border {
+    border-left: 5px solid gray;
+    background-color: rgba(128, 128, 128, 0.171);
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-left-border p {
+    padding: 10px 10px;
+    font-family: var(--family);
+    font-size: 17px;
+    width: 80%;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+/* SECOND_CENTER_CAFE_IMG_AND_TEXT */
+
+.section-center-first-photo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.bg-cafe-img-and-text {
+    width: 100%;
+    padding: 0 105px;
+}
+
+.bg-cafe-img {
+    width: 100%;
+}
+
+.bg-cafe-img img{
+    width: 100%;
+    filter: grayscale(80%);
+}
+
+.cafe-text {
+    font-family:var(--family);
+    padding: 10px 0;
+    font-size: 17px;
+}
+
+.cafe-text p {
+    padding: 10px 0;
+
+}
+
+.cafe-text span{
+    font-weight: 600;
+}
+
+/* THIRD_CENTER_CAFE_MENU */
+
+.section-center-menu {
+    width: 100%;
+    padding: 18px 100px;
+
+}
+
+
+.section-menu-bar {
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    background-color:rgba(192, 192, 192, 0.253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-header-text {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(151, 151, 151, 0.16);
+    background-color:rgba(192, 192, 192, 0.253);
+    text-align: center;
+    padding: 8px;
+}
+
+.selected-text {
+    width: 90%;
+    text-align: center;
+    padding: 5px;
+    font-family:var(--family);
+    font-size: 17px; 
+    color:white;
+    background-color: #616161;
+}
+
+.not-selected-text {
+    width: 90%;
+    text-align: center;
+    padding: 5px;
+    font-family:var(--family);
+    font-size: 17px; 
+}
+
+
+
+.all-menu-content {
+    width: 100%;
+    font-family:var(--family);
+    font-size: 17px;
+    padding: 20px;
+}
+
+.little-bold-text {
+    padding:10px 0;
+    font-weight: 500;
+}
+
+.little-gray-text {
+    padding:10px 0;
+    color:gray;
+}
+
+/* FIFTH_CENTER_CAFE_LOCATION */
+
+.cafe-map-text {
+    font-family:var(--family);
+    padding: 10px 105px;
+    font-size: 17px;
+    width: 100%;
+}
+
+.cafe-map-text p {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.bg-color-black {
+    background-color:black;
+    color:white;
+    padding: 5px;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    width: 97%;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.form-button-send {
+    padding: 15px 0;
+
+}
+
+.send-button {
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    color:white;
+    width: 17%;
+    padding: 10px;
+    text-align:center;
+    font-family:var(--family);
+    font-size: 17px;
+    transition: .2s;
+}
+
+.send-button:hover {
+    background-color: #ddd9d2;
+    color:black;
+    cursor:pointer;
+    transition: .2s;
+}
+
+/* FOOTER_CENTER_TEXT_AND_HREF*/
+
+.cafe-info-center {
+    background-color: #f1f1f1;
+    width:100%;
+    height: 130px;
+}
+
+.center-text-and-href {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: var(--family);
+    font-size: 18px;
+}
+
+.center-text-and-href p {
+    padding: 40px 0;
+}
